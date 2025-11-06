@@ -1,3 +1,4 @@
+# backend
 __pycache__/
 *.py[cod]
 *$py.class
@@ -20,3 +21,31 @@ build/
 .vscode/
 
 postgres_data/
+
+
+# frontend
+node_modules/
+.next/
+out/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.cache/
+.eslintcache
+coverage/
+*tsconfig.tsbuildinfo
+
+# shadcn/ui generated stuff (assume .env and build already included above)
+components.json
+public/icons/
+
+# environment files (if frontend has any separate ones)
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# misc
+.vercel/
+*.swp
