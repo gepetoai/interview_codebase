@@ -10,7 +10,6 @@ class PromptVersionRepository:
             prompt_id=prompt_id,
             version=version,
             content=content,
-            created_by=created_by
         )
         db.add(db_version)
         db.flush()
