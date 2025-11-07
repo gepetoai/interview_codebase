@@ -25,5 +25,6 @@ backend/.env
 
 ## Bugs!
 - frontend doesn't seem to run properly
+- once i create a prompt, im unable to select it
 - prompts sidebar shows incorrect number of prompts
 - previous prompt versions don't show the author's name if it was inputted

@@ -42,7 +42,6 @@ export function PromptSidebar({
           <PromptList
             prompts={prompts}
             selectedPromptId={selectedPromptId}
-            onSelectPrompt={onSelectPrompt}
             onDeletePrompt={onDeletePrompt}
           />
         </div>
