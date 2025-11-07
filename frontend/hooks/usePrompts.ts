@@ -10,8 +10,10 @@ export function usePrompts() {
       setLoading(true);
       const data = await api.getPrompts();
       setPrompts(data);
+      return data;
     } catch (error) {
       console.error('Error loading prompts:', error);
+      return [];
     } finally {
       setLoading(false);
     }
