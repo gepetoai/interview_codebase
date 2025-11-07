@@ -37,6 +37,13 @@ export default function Home() {
     const success = await updatePromptContent(selectedPrompt.id, content, createdBy);
     if (success) {
       await reloadVersions();
+
+      // Reload prompts and update selected prompt 
+      const updatedPrompts = await reloadPrompts();
+      const updatedPrompt = updatedPrompts.find(p => p.id === selectedPrompt.id);
+      if (updatedPrompt) {
+        setSelectedPrompt(updatedPrompt);
+      }
     }
   };
 

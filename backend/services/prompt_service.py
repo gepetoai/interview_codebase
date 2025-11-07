@@ -51,7 +51,7 @@ class PromptService:
             db_prompt = prompt_repository.get(db, prompt_id)
             if not db_prompt:
                 return None
-            
+
             latest_version = prompt_version_repository.get_latest_version_number(db, prompt_id)
             prompt_version_repository.create(
                 db,
@@ -60,6 +60,12 @@ class PromptService:
                 update_data.content,
                 update_data.created_by
             )
+
+            versions = prompt_version_repository.get_all_by_prompt(db, prompt_id)
+            if len(versions) > 3:
+                new_name = update_data.content[:5]
+                prompt_repository.rename(db, prompt_id, new_name)
+
             db.commit()
             return PromptResponse.model_validate(db_prompt)
         except Exception:
