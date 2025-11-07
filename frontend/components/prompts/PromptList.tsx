@@ -6,7 +6,7 @@ import { FileText } from 'lucide-react';
 interface PromptListProps {
   prompts: Prompt[];
   selectedPromptId: string | null;
-  onSelectPrompt: (prompt: Prompt) => void;
+  onSelectPrompt?: (prompt: Prompt) => void;
   onDeletePrompt: (id: string) => void;
 }
 
@@ -33,7 +33,7 @@ export function PromptList({
           key={prompt.id}
           prompt={prompt}
           isSelected={selectedPromptId === prompt.id}
-          onSelect={() => onSelectPrompt(prompt)}
+          onSelect={() => onSelectPrompt?.(prompt)}
           onDelete={() => onDeletePrompt(prompt.id)}
         />
       ))}
