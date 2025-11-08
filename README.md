@@ -26,3 +26,4 @@ backend/.env
 ## Bugs!
 1. frontend isn't running for some reason
 2. prompt versions don't show the author's name, even if it was inputted
+3. prompts sidebar shows incorrect number of prompts

@@ -36,7 +36,7 @@ export function PromptSidebar({
         <div className="p-4">
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-wide">
-              Prompts ({prompts.length})
+              Prompts ({prompts.length + 1})
             </h2>
           </div>
           <PromptList
