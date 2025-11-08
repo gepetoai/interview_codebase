@@ -21,3 +21,7 @@ docker-compose up frontend
 backend/.env
 - DATABASE_URL: "postgresql://postgres:postgres@db:5432/prompts"
 - DATABASE_ECHO: False
+
+
+## Bugs!
+1. frontend isn't running for some reason
