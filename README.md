@@ -28,3 +28,4 @@ backend/.env
 2. prompt versions don't show the author's name, even if it was inputted
 3. prompts sidebar shows incorrect number of prompts
 4. once i create a prompt, im unable to select it
+5. if i create multiple versions of a prompt, the name spontaneously changes at some point
