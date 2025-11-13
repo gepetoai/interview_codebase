@@ -8,12 +8,6 @@ docker-compose up --build
 - Backend: http://localhost:8000  
 - DB: localhost:5432
 
-Run backend or frontend only:
-
-```bash
-docker-compose up backend
-docker-compose up frontend
-```
 
 
 ## Environment
@@ -25,7 +19,7 @@ backend/.env
 
 ## Bugs!
 1. frontend isn't running for some reason
-2. prompt versions don't show the author's name, even if it was inputted
-3. prompts sidebar shows incorrect number of prompts
-4. once i create a prompt, im unable to select it
+2. once i create a prompt, im unable to select it
+3. prompt versions don't show the author's name, even if it was inputted
+4. prompts sidebar shows incorrect number of prompts
 5. if i create multiple versions of a prompt, the name spontaneously changes at some point
